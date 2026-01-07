@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>MouseFit：操作診断テスト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 冒頭タイトルと目次 -->
+  <header id="introSection">
+    <h1>MouseFit：操作診断テスト</h1>
+    <p>あなたのマウス操作を分析して、最適な感度をおすすめします。</p>
+
+    <section id="intro">
+      <h2>テストの流れ</h2>
+      <ol>
+        <li><b>Task1：</b> 線をなぞって安定性をチェック</li>
+        <li><b>Task2：</b> 小円をクリックして精度をチェック</li>
+        <li><b>Task3：</b> 動く点を5秒追従して操作性をチェック</li>
+      </ol>
+      <p>全てのタスクが終わったら、結果とおすすめ感度が表示されます。</p>
+    </section>
+  </header>
+
+  <!-- UIパネル -->
+  <div id="ui">
+    <p id="taskLabel">準備中</p>
+    <button id="startBtn">テスト開始</button>
+  </div>
+
+  <!-- Canvas -->
+  <canvas id="canvas"></canvas>
+
+  <!-- 結果カード -->
+  <div id="resultCard" class="hidden">
+    <h2>操作診断結果</h2>
+    <div id="resultText"></div>
+    <button id="restartBtn">もう一度診断</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* 全体 */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #4a6cf7;
+}
+
+header p {
+  font-size: 1em;
+  color: #555;
+}
+
+#intro {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+  background: rgba(255,255,255,0.95);
+  padding: 14px 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+#intro ol li {
+  margin-bottom: 8px;
+}
+
+/* Canvas */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: rgba(255,255,255,0.1);
+}
+
+/* UIパネル */
+#ui {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+#taskLabel {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+#startBtn {
+  padding: 10px 18px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #4a6cf7;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#startBtn:hover {
+  background: #3b5be0;
+  transform: scale(1.05);
+}
+
+/* 結果カードUI */
+#resultCard {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.95);
+  padding: 18px 22px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  font-family: sans-serif;
+  z-index: 20;
+}
+
+#resultCard button {
+  padding: 8px 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #4a6cf7;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#resultCard button:hover {
+  background: #3b5be0;
+}
+
+.hidden {
+  display: none;
+}
